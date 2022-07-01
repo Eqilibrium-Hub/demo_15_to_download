@@ -329,7 +329,7 @@ class Bridge:
 			order_data.update(
 				{
 					'partner_id'       : order.customer.id,
-					'customer_name'    : order.customer.first_name+' '+order.customer.last_name,
+					'customer_name'    : order.customer.first_name,
 					'customer_email'   : order.customer.email,
 					'customer_mobile'  : order.customer.phone,
 					'customer_phone'   : order.customer.attributes.get('default_address') and order.customer.default_address.phone,
